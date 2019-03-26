@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Welcome to composer monitoring resource!";
+
+
+$@

@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+
+<?php
+echo "Out is not implemented yet.\n";

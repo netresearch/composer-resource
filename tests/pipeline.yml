@@ -1,0 +1,32 @@
+resources:
+
+
+- name: docker-composer-monitoring
+  type: composer-resource
+  source:
+    repository: https://git.netresearch.de/blugento/super-admin/root
+    username: ((GIT.NETRESEARCH_USER))
+    password: ((GIT.NETRESEARCH_PASSWORD))
+    private_key: ((GIT.NETRESEARCH_KEY))
+    composer_auth: ((COMPOSER.AUTH))
+    label: UMG Superadmin
+    branch: master
+    appPath: .
+
+resource_types:
+- name: composer-resource
+  type: docker-image
+  source:
+    repository: registry.netresearch.de/blugento/support/composer-resource
+    username: ((GIT.NETRESEARCH_USER))
+    password: ((GIT.NETRESEARCH_PASSWORD))
+
+jobs:
+- name: monitoring
+  public: true
+  serial: true
+  plan:
+  - aggregate:
+    - put: docker-composer-monitoring
+      params:
+        example: dirk
