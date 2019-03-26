@@ -1,15 +1,22 @@
+=================================================
+Concourse CI composer dependency monitor resource
+=================================================
 
 
 Build
 =====
+ ::
 
-docker build -t registry.netresearch.de/blugento/support/composer-resource .
-docker push registry.netresearch.de/blugento/support/composer-resource
+    docker build -t registry.netresearch.de/blugento/support/composer-resource .
+    docker push registry.netresearch.de/blugento/support/composer-resource
 
 Debug
 =====
+ ::
 
-docker run -it registry.netresearch.de/blugento/support/composer-resource sh
+    docker run -it registry.netresearch.de/blugento/support/composer-resource sh
+
+
 
 Testing
 =======
