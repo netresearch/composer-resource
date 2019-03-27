@@ -1,4 +1,16 @@
 #!/usr/bin/env php
 
 <?php
-echo "In is not implemented yet.\n";
+$argf = file_get_contents("php://stdin");
+$output = [
+    'version' => ['ref' => 'none'],
+];
+
+$output['metadata'] = [
+    ['name' => 'ENV', 'value' => print_r($_ENV, true)],
+    ['name' => 'SERVER', 'value' => print_r($_SERVER, true)],
+    ['name' => '$argf', 'value' => print_r($argf, true)],
+    ['name' => '$argv', 'value' => print_r($argv, true)],
+];
+
+fwrite(STDOUT, json_encode($output));
