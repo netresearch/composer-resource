@@ -7,19 +7,22 @@ Concourse CI composer dependency monitor resource
 Idea
 ----
 
+- https://content.pivotal.io/blog/developing-a-custom-concourse-resource
 - https://concoursetutorial.com/miscellaneous/docker-images/
 - https://concourse-ci.org/implementing-resources.html
 
 Build
 =====
- ::
 
-    docker build --no-cache=true -t registry.netresearch.de/blugento/support/composer-resource .
+.. code-block:: bash
+
+    docker build -t registry.netresearch.de/blugento/support/composer-resource .
     docker push registry.netresearch.de/blugento/support/composer-resource
 
 Debug
 =====
- ::
+
+.. code-block:: bash
 
     docker run -it registry.netresearch.de/blugento/support/composer-resource sh
 
