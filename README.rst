@@ -5,13 +5,10 @@ Concourse CI composer dependency monitor resource
 
 Docker image: https://hub.docker.com/r/netresearch/composer-resource
 
-.. raw:: html
-
-    <img src="https://www.drupal.org/files/styles/grid-3-2x/public/project-images/logo-composer-transparent3.png?itok=3wl5Mi6v" style="max-height:100px; text-align: left" alt="Concourse CI">
-
-.. raw:: html
-
-    <img src="https://concourse-ci.org/images/trademarks/concourse-black.png" style="max-height:100px; text-align: left" alt="Composer">
+.. image:: https://www.drupal.org/files/styles/grid-3-2x/public/project-images/logo-composer-transparent3.png?itok=3wl5Mi6v
+   :alt: Composer
+   :height: 100px
+   :align: left
 
 ----
 Idea
