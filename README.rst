@@ -3,6 +3,13 @@ Concourse CI composer dependency monitor resource
 =================================================
 
 
+Docker image: https://hub.docker.com/r/netresearch/composer-resource
+
+.. image:: https://www.drupal.org/files/styles/grid-3-2x/public/project-images/logo-composer-transparent3.png?itok=3wl5Mi6v
+   :alt: Concourse composer resource
+   :align: left
+
+
 ----
 Idea
 ----
