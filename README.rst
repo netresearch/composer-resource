@@ -11,6 +11,13 @@ Idea
 - https://concoursetutorial.com/miscellaneous/docker-images/
 - https://concourse-ci.org/implementing-resources.html
 
+Steps
+-----
+
+1. Install the project dependencies ``composer install``
+2. Check for outdated ``composer outdated -D -m -f json --no-interaction --no-ansi``
+
+
 Build
 =====
 
@@ -30,6 +37,11 @@ Debug
 
 Testing
 =======
+
+1. ``composer install -d /tests``
+2. ``composer outdated -D -m -f json --no-interaction --no-ansi -d /tests``
+2. ``composer update --dry-run -d /tests``
+
 
 ------------------
 Setup the pipeline

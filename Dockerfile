@@ -24,6 +24,7 @@ WORKDIR /resource
 
 COPY --from=build /resource/ .
 COPY setup/ /
+COPY tests/fixtures/ /tests/
 RUN chmod +x /usr/local/bin -R
 
 
