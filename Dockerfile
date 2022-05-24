@@ -1,4 +1,4 @@
-FROM php:7.3-alpine as dependencies
+FROM php:7.4.28-alpine as dependencies
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
