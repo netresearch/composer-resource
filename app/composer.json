@@ -16,7 +16,7 @@
     "require": {
         "ext-json": "*",
         "ext-yaml": "*",
-        "symfony/process": "^4.2"
+        "symfony/process": "^7.0"
     },
     "autoload": {
         "psr-4": {
